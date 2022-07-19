@@ -25,6 +25,7 @@ def flat_generator(my_list):
             yield elem
 
 
+
 if __name__ == '__main__':
 
     nested_list = [
@@ -40,7 +41,6 @@ if __name__ == '__main__':
 
     flat_list = [item for item in FlatIterator(nested_list)]
     print(flat_list)
-
 
     for item in flat_generator(nested_list):
         print(item)
